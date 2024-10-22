@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Surprise</title>
+    <style> 
+        body {
+            background-color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura total da janela */
+            margin: 0; /* Remove margens padrão */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* Alinha os itens na coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+            max-width: 800px; /* Limita a largura do contêiner */
+            margin: auto; /* Centraliza o contêiner */
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            background-color: rgb(253, 250, 30);
+            position: relative;
+            z-index: 1; /* Corrigido para z-index */
+            margin: 20px 0; /* Espaçamento acima e abaixo do título */
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .emoji {
+            font-size: 20px; /* Tamanho do emoji */
+            animation: blink 1s infinite; /* Animação */
+        }
+
+        .imagem-ajustada {
+            width: 50%; /* Ajusta a largura para 50% do contêiner */
+            max-width: 300px; /* Limite máximo para a largura da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 10px; /* Canto arredondado, opcional */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>It's your anniversary!</h1>
+        <hr>
+        <p>You didn't expect this one, right?</p>
+        <img src="batman coquette.jpg" alt="" class="imagem-ajustada">
+        <p>Someone called <span class="strikethrough">Victor</span> <b>Batman</b> Turns 20y today.
+        </p>
+        <p>Oh! Happy birthday my dear, i love you so much!! </p>
+       <p> ~Your Catwoman</p> 
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
